@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Link de mi css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Clase bootstrap</title>
+</head>
+<body>
+    
+    <!--Primera clase para trabajar el contenido de los htmls:
+            container o container-fluid
+    -->
+
+    <!--Segunda clase para trabajar el contenido dento del padre, container o container-fluid
+            row
+    -->
+
+    <!--Tercera clase para trabajar el acomodomamiento de los hijos de la row
+            col
+    -->
+
+    <!---->
+
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light color-nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Morera viajes</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="pages/Usuario.html">Iniciar Sesión</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Paquetes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Paquete 1</a></li>
+                          <li><a class="dropdown-item" href="#">Paquete 2</a></li>
+                          <li><a class="dropdown-item" href="#">Paquete 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+        
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    
+    <!--Carrousel-->
+    <main class="row">
+        <div id="carouselExampleCaptions" class="carousel slide col-" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/paisaje1.jpg" class="d-block w-100" alt="" height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Croacia</h2>
+                  <p>Visita los hermosos paisajes que esta tierra tiene para darte</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/paisaje2.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>España</h2>
+                  <p>Combina cultura gastronómica con paisajes de lujo, en el viejo continente</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/paisaje3.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Brasil</h2>
+                  <p>Veni a conocer el amazonas y su imponente flora y fauna</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <section class="row justify-content-center">
+        <div class="card col-3" style="width: 18rem;">
+            <img src="img/paisaje1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Croacia</h3>
+              <p class="card-text">Vuelo ida y vuelta + estadia en el hotel Four Seasons de Zagreb 3 noches</p>
+              <p class="card-text">*en base doble</p>
+              <a href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card col-3" style="width: 18rem;">
+            <img src="img/paisaje2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">España</h3>
+              <p class="card-text">Vuelo ida y vuelta + estadia en el hotel Four Seasons de Barcelona 3 noches</p>
+              <p class="card-text">*en base doble</p>
+              <a href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card col-3" style="width: 18rem;">
+            <img src="img/paisaje3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Vuelo ida y vuelta + estadia en el hotel Four Seasons de Rio de Janeiro 3 noches</p>
+              <p class="card-text">*en base doble</p>
+              <a href="#" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+    </section>
+
+   
+    <!--Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
